@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int Balance(int bal) {
+	  printf("YOUR BALANCE IS #%d\n", bal);
+}
+
+int AmountDeposit( int amountDeposit, int balance){
+	
+            printf("HOW MUCH DO YOU WANT TO DEPOSIT: #");
+            scanf("%d", &amountDeposit);
+            if(amountDeposit > 0)
+            {
+            	balance += amountDeposit;
+			}
+			else
+			{
+				printf("INVALID AMOUNT DEPOSITED\n");
+			}
+}
+int AmountWithdraw(int Amountwithdraw, int balance){
+	printf("HOW MUCH DO YOU WANT TO WITHDRAW: $\n");
+            scanf("%d", &AmountWithdraw);
+            balance -=AmountWithdraw ;
+        }
+        if( amountWithdraw > balance)
+            {
+            	printf("SORRY, YOU DO NOT HAVE SUFFICIENT BALANCE IN YOUR ACCOUNT");
+			}
+        else{
+            printf("INVALID TRANSACTION!!!\n");
+}
